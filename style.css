@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap");
+
+body {
+    font-family: "Noto sans JP", sans-serif;
+    margin: auto;
+}
+section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+section div {
+    margin: 1rem;
+}
+#login {
+    height: 22px;
+    width: 70px;
+    border: 0;
+    border-radius: 10px;
+}
