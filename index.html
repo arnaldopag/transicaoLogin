@@ -5,37 +5,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./style.css" />
+
         <title>Transição Login</title>
     </head>
     <body>
         <main>
             <section>
                 <div>
-                    <p>
-                        Email:
-                        <input
-                            type="email"
-                            name="email"
-                            id="email"
-                            placeholder="email"
-                        />
-                    </p>
+                    <label for="email">Email:</label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="email"
+                    />
+                    <div hidden class="descricao">Digite seu Email</div>
                 </div>
                 <div>
-                    <p>
-                        Password:
-                        <input
-                            type="password"
-                            name="password"
-                            id="password"
-                            placeholder="password"
-                        />
-                    </p>
+                    <label for="password">Senha:</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="password"
+                    />
+                    <div hidden class="descricao">Digite sua Senha</div>
                 </div>
-                <input type="button" name="login" id="login" value="Login" />
+                <input
+                    type="button"
+                    onclick="return ativar()"
+                    id="login"
+                    value="Login"
+                />
+                <div id="mensagem" hidden>
+                    Autenticação esta sendo processada
+                </div>
                 <input type="checkbox" name="Manter conectado" id="manter" />
                 <label for="manter">Manter conectado</label>
             </section>
+            <script src="./index.js"></script>
         </main>
     </body>
 </html>

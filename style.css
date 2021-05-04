@@ -12,9 +12,22 @@ section {
 section div {
     margin: 1rem;
 }
+input {
+    box-shadow: 1px 1px rgb(100, 96, 96);
+}
 #login {
-    height: 22px;
-    width: 70px;
-    border: 0;
     border-radius: 10px;
+}
+
+:hover + .descricao {
+    font-size: 12px;
+    display: inline-flex;
+    border: 1px solid black;
+    box-shadow: 1px 1px rgb(100, 96, 96);
+}
+#mensagem {
+    transition: none;
+}
+.especial {
+    display: inline-flex;
 }
